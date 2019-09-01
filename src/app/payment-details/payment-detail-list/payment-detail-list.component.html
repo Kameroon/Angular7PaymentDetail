@@ -1,0 +1,21 @@
+<h5 class="display-9 text-center">Tous les détails de paiment</h5>
+<hr>
+
+<table class="table table-hover">
+    <thead>
+        <th>Nom</th>
+        <th>Numéro carte</th>
+        <th>Date d'expiration</th>
+        <th>Actions</th>
+    </thead>
+    <tr *ngFor="let paymentDetail of service.paymentDetaitList">
+        <td (click)="populateForm(paymentDetail)">{{ paymentDetail.CardOwnerName }}</td>
+        <td (click)="populateForm(paymentDetail)">{{ paymentDetail.CardNumber }}</td>
+        <td (click)="populateForm(paymentDetail)">{{ paymentDetail.ExpirationDate }}</td>
+        <td>
+            <span>
+                <i class="far fa-trash-alt fa-lg text-danger" (click)="onDelete(paymentDetail.PPId)"></i>
+            </span>
+        </td>
+    </tr>
+</table>

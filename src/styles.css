@@ -1,0 +1,30 @@
+/* You can add global styles to this file, and also import other style files */
+
+/* Gestion de l'état des control dans notre formulaire */
+input.ng-touched.ng-invalid{
+    border-color: #dc3545;
+}
+
+input.ng-valid{
+    border-color: #28a745;
+}
+
+.green-icon{
+    color: #28a745;
+}
+
+.red-icon{
+    color: #dc3545;
+}
+/* Gestion de l'état des control dans notre formulaire */
+
+/* Gestion de l'affichage du message d'erreur */
+#tostr-container > div{
+    opacity: 1;
+}
+/* Gestion de l'affichage du message d'erreur */
+
+/* Gestion du curseur sur une ligne de la table */
+table tr:hover{
+    cursor: pointer;
+}
